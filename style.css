@@ -1071,7 +1071,8 @@ topページ
 .works ul li a img{
     width: 81.867vw;
     height: 53.333vw;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: 0% 0%;
     box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
 }
 .works ul li .textarea p{
