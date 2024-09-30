@@ -1126,7 +1126,10 @@ topページ
     color: #BC7E8C;
 }
 
-.contact_img_sp{
+.contact_img_sp img{
+    width: 100vw;
+    height: 26.667vw;
+    object-fit: cover;
     margin-top: 48vw;
 }
 
