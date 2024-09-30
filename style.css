@@ -1,0 +1,1469 @@
+@charset "UTF-8";
+
+html{
+    background-color: #FFFDFD;
+}
+body{
+    font-family: "Noto Sans JP", sans-serif;
+}
+/*-------------------------------------------
+PC
+-------------------------------------------*/
+@media screen and (min-width: 960px){
+/*-------------------------------------------
+topページ
+-------------------------------------------*/
+#header{
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+.scrollbg{
+    background-color: #909090;
+}
+#header button{
+    display: none;
+}
+#header ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
+    margin-right: 5vw;
+    padding: 2vw 0;
+}
+#header ul li{
+    margin-right: 2.5vw;
+}
+#header ul li:last-child{
+    margin-right: 0;
+}
+#header ul li a{
+    font-size: 1.143vw;
+    font-weight: 500;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+
+.fv{
+    width: 100vw;
+    height: 53.714vw;
+    background-image: url(./img/fv_bg_pc.png);
+    position: relative;
+}
+.fv .sitename p:first-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #FFFDFD;
+    position: absolute;
+    top: 29.751vw;
+    right: 5vw;
+}
+.fv .sitename p:last-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #FFFDFD;
+    position: absolute;
+    top: 36.357vw;
+    right: 5vw;
+}
+
+.about{
+    width: 100vw;
+}
+.about h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #282F35;
+    margin-left: 10.714vw;
+    padding-top: 9.285vw;
+}
+.about h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.about img{
+    width: 60.714vw;
+    height: 34.428vw;
+    margin: 5.785vw 19.63vw 0 19.655vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.about .textarea{
+    width: 100vw;
+}
+.about .textarea p:nth-child(1){
+    font-size: 3.571vw;
+    width: 31.43vw;
+    margin: 5vw auto 0;
+}
+.about .textarea p:nth-child(2){
+    font-size: 1.143vw;
+    width: 55.7vw;
+    line-height: 2.5;
+    letter-spacing: 5%;
+    margin: 5.714vw auto 0;
+}
+.about a{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 10vw auto 0;
+}
+
+.works{
+    width: 100vw;
+}
+.works h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #282F35;
+    margin: 10.715vw 0 0 53.5vw;
+    padding-top: 10.715vw;
+}
+.works h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.works ul{
+    display: flex;
+    margin: 5.785vw 10.642vw 0;
+}
+.works ul li{
+    width: 25vw;
+    height: 20.071vw;
+    margin-right: 1.857vw;
+}
+.works ul li:nth-child(3){
+    margin-right: 0;
+}
+.works ul li a img{
+    width: 25vw;
+    height: 14.285vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+.works ul li .textarea{
+    font-size: 1.143vw;
+}
+.works ul li .textarea p:nth-child(1){
+    margin-top: 2.142vw;
+}
+.works ul li .textarea p:nth-child(2){
+    margin-top: .5vw;
+}
+.works a:last-child{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 9.785vw auto 0;
+}
+
+.contact_img_sp{
+    display: none;
+}
+
+.contact{
+    width: 100vw;
+    height: 34.928vw;
+    background-image: url(./img/contact_bg_pc.png);
+    margin-top: 21.428vw;
+    margin-bottom: 3.571vw;
+}
+.contact h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #FFFDFD;
+    margin-left: 10.714vw;
+    padding-top: 3.571vw;
+}
+.contact h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #FFFDFD;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.contact p{
+    font-size: 1.4285vw;
+    color: #FFFDFD;
+    text-align: center;
+    margin-top: 5.5vw;
+}
+.contact a{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 2.142vw auto 0;
+}
+
+footer{
+    margin-bottom: 3.571vw;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+
+
+/*-------------------------------------------
+aboutページ
+-------------------------------------------*/
+#header_single{
+    width: 100vw;
+    height: 5.143vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #909090;
+}
+#header_single button{
+    display: none;
+}
+#header_single ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 2vw;
+    margin-right: 5vw;
+}
+#header_single ul li{
+    margin-right: 2.5vw;
+}
+#header_single ul li:last-child{
+    margin-right: 0;
+}
+#header_single ul li a{
+    font-size: 1.143vw;
+    font-weight: 500;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+
+.about_page{
+    width: 100vw;
+}
+.about_page .profilewrapper{
+    margin-top: 12.928vw;
+    text-align: center;
+}
+.about_page h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.142vw;
+    color: #282F35;
+}
+.about_page .profilewrapper img{
+    width: 29.642vw;
+    height: 35.357vw;
+    margin-top: 4.285vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.about_page .profilewrapper p{
+    text-align: left;
+    color: #282F35;
+    width: 48.429vw;
+    font-size: 1.143vw;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin: 3.571vw auto 0;
+}
+.about_page .skillwrapper{
+    margin-top: 11.214vw;
+    text-align: center;
+}
+.about_page .skillwrapper ul{
+    width: 55vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4.286vw auto 14.286vw;
+}
+.about_page .skillwrapper ul li{
+    width: 14.286vw;
+    margin-right: 2.714vw;
+}
+.about_page .skillwrapper ul li:nth-child(4){
+    margin-top: 4.286vw;
+}
+.about_page .skillwrapper ul li:last-child{
+    margin-top: 4.286vw;
+    margin-right: 0;
+}
+.about_page .skillwrapper ul li .skill_icon{
+    width: 14.286vw;
+    height: 14.286vw;
+    background-color: #BC7E8C;
+    display: table-cell;
+    vertical-align: middle;
+}
+.about_page .skillwrapper ul li .skill_icon p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.571vw;
+    line-height: 1.2;
+    color: #FFFDFD;
+    font-weight: bold;
+}
+.about_page .skillwrapper ul li .text{
+    width: 14.286vw;
+    color: #282F35;
+    font-size: 1.143vw;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-align: left;
+    margin-top: 1.429vw;
+}
+footer{
+    margin-bottom: 3.571vw;
+}
+/*-------------------------------------------
+worksページ
+-------------------------------------------*/
+.works_page{
+    width: 100vw;
+}
+.works_page ul{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 14.286vw auto;
+}
+.works_page ul li{
+    width: 28vw;
+    margin-right: 2.142vw;
+    margin-bottom: 6.857vw;
+}
+.works_page ul li:last-child{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.works_page ul li:nth-child(3n){
+    margin-right: 0;
+}
+.works_page ul li a img{
+    width: 28.571vw;
+    height: 15vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+    margin-bottom: 2.143vw;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+.works_page ul li .textarea{
+    font-size: 1.143vw;
+    color: #282F35;
+    letter-spacing: .14em;
+}
+.works_page ul li .textarea p{
+    margin-bottom: .429vw;
+}
+.works_page ul li .textarea p:last-child{
+    margin-bottom: 0;
+}
+/*-------------------------------------------
+contactページ
+-------------------------------------------*/
+.contactform{
+    width: 100vw;
+}
+.contactform .information{
+    font-size: 1.143vw;
+    margin-top: 12.929vw;
+    text-align: center;
+}
+.contactform form{
+    width: 51.571vw;
+    margin: 9.286vw auto 7.143vw;
+}
+.contactform form p{
+    font-size: 1.786vw;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: #282F35;
+    margin-bottom: 1.429vw;
+}
+.contactform form input{
+    width: 51.571vw;
+    height: 5vw;
+    margin-bottom: 3.571vw;
+}
+.contactform textarea{
+    width: 51.571vw;
+    height: 28.571vw;
+    resize: none;
+}
+.contactform form .sendBtn{
+    margin-top: 7.143vw;
+    text-align: center;
+}
+.contactform form .sendBtn input{
+    width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.786vw;
+    color: #FFFDFD;
+    background-color: #BC7E8C;
+    border-radius: 2.143vw;
+    border: none;
+    margin-bottom: 0;
+}
+
+}
+/*-------------------------------------------
+TABLET
+-------------------------------------------*/
+@media screen and (min-width: 640px){
+    /*-------------------------------------------
+topページ
+-------------------------------------------*/
+#header{
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+.scrollbg{
+    background-color: #909090;
+}
+#header button{
+    display: none;
+}
+#header ul{
+    display: flex;
+    justify-content: end;
+    margin-right: 5vw;
+    padding: 2vw 0;
+}
+#header ul li{
+    margin-right: 2.5vw;
+}
+#header ul li:last-child{
+    margin-right: 0;
+}
+#header ul li a{
+    font-size: 1.143vw;
+    font-weight: 500;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+
+.fv{
+    width: 100vw;
+    height: 50vw;
+    background-image: url(./img/fv_bg_pc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.fv .sitename p:first-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6vw;
+    color: #FFFDFD;
+    position: absolute;
+    top: 29.751vw;
+    right: 5vw;
+}
+.fv .sitename p:last-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6vw;
+    color: #FFFDFD;
+    position: absolute;
+    top: 36.357vw;
+    right: 5vw;
+}
+
+.about{
+    width: 100vw;
+}
+.about h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #282F35;
+    margin-left: 10.714vw;
+    padding-top: 9.285vw;
+}
+.about h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.about img{
+    width: 60.714vw;
+    height: 34.428vw;
+    margin: 5.785vw 19.63vw 0 19.655vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.about .textarea{
+    width: 100vw;
+}
+.about .textarea p:nth-child(1){
+    font-size: 3.571vw;
+    width: 31.43vw;
+    margin: 5vw auto 0;
+}
+.about .textarea p:nth-child(2){
+    font-size: 1.143vw;
+    width: 55.7vw;
+    line-height: 2.5;
+    letter-spacing: 5%;
+    margin: 5.714vw auto 0;
+}
+.about a{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 10vw auto 0;
+}
+
+.works{
+    width: 100vw;
+}
+.works h2{
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #282F35;
+    margin: 10.715vw 0 0 53.5vw;
+    padding-top: 10.715vw;
+}
+.works h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.works ul{
+    display: flex;
+    margin: 5.785vw 10.642vw 0;
+}
+.works ul li{
+    width: 25vw;
+    height: 20.071vw;
+    margin-right: 1.857vw;
+}
+.works ul li:nth-child(3){
+    margin-right: 0;
+}
+.works ul li a img{
+    width: 25vw;
+    height: 14.285vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.works ul li .textarea{
+    font-size: 1.143vw;
+}
+.works ul li .textarea p:nth-child(1){
+    margin-top: 2.142vw;
+}
+.works ul li .textarea p:nth-child(2){
+    margin-top: .5vw;
+}
+.works a:last-child{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 9.785vw auto 0;
+}
+
+.contact_img_sp{
+    display: none;
+}
+
+.contact{
+    width: 100vw;
+    height: 34.928vw;
+    background-image: url(./img/contact_bg_pc.png);
+    margin-top: 21.428vw;
+    margin-bottom: 3.571vw;
+}
+.contact h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.285vw;
+    font-weight: bold;
+    color: #FFFDFD;
+    margin-left: 10.714vw;
+    padding-top: 3.571vw;
+}
+.contact h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #FFFDFD;
+    width: 17.5vw;
+    margin-left: 6.428vw;
+    margin-bottom: 1.457vw;
+}
+.contact p{
+    font-size: 1.4285vw;
+    color: #FFFDFD;
+    text-align: center;
+    margin-top: 5.5vw;
+}
+.contact a{
+    display: block;
+	width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 1.143vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 2.142vw;
+    margin: 2.142vw auto 0;
+}
+
+footer{
+    margin-bottom: 3.571vw;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+
+
+/*-------------------------------------------
+aboutページ
+-------------------------------------------*/
+#header_single{
+    width: 100vw;
+    height: 5.143vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #909090;
+}
+#header_single button{
+    display: none;
+}
+#header_single ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 2vw;
+    margin-right: 5vw;
+}
+#header_single ul li{
+    margin-right: 2.5vw;
+}
+#header_single ul li:last-child{
+    margin-right: 0;
+}
+#header_single ul li a{
+    font-size: 1.143vw;
+    font-weight: 500;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+
+.about_page{
+    width: 100vw;
+}
+.about_page .profilewrapper{
+    margin-top: 12.928vw;
+    text-align: center;
+}
+.about_page h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.142vw;
+    color: #282F35;
+}
+.about_page .profilewrapper img{
+    width: 29.642vw;
+    height: 35.357vw;
+    margin-top: 4.285vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.about_page .profilewrapper p{
+    text-align: left;
+    color: #282F35;
+    width: 48.429vw;
+    font-size: 1.143vw;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    margin: 3.571vw auto 0;
+}
+.about_page .skillwrapper{
+    margin-top: 11.214vw;
+    text-align: center;
+}
+.about_page .skillwrapper ul{
+    width: 55vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4.286vw auto 14.286vw;
+}
+.about_page .skillwrapper ul li{
+    width: 14.286vw;
+    margin-right: 2.714vw;
+}
+.about_page .skillwrapper ul li:nth-child(4){
+    margin-top: 4.286vw;
+}
+.about_page .skillwrapper ul li:last-child{
+    margin-top: 4.286vw;
+    margin-right: 0;
+}
+.about_page .skillwrapper ul li .skill_icon{
+    width: 14.286vw;
+    height: 14.286vw;
+    background-color: #BC7E8C;
+    display: table-cell;
+    vertical-align: middle;
+}
+.about_page .skillwrapper ul li .skill_icon p{
+    font-size: 3.571vw;
+    color: #FFFDFD;
+    font-weight: bold;
+}
+.about_page .skillwrapper ul li .text{
+    width: 14.286vw;
+    color: #282F35;
+    font-size: 1.143vw;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-align: left;
+    margin-top: 1.429vw;
+}
+footer{
+    margin-bottom: 3.571vw;
+}
+/*-------------------------------------------
+worksページ
+-------------------------------------------*/
+.works_page{
+    width: 100vw;
+}
+.works_page ul{
+    width: 90vw;
+    margin: 12.857vw auto 14.286vw;
+    display: flex;
+}
+.works_page ul li{
+    width: 28.571vw;
+    margin-right: 2.142vw;
+    margin-bottom: 6.857vw;
+}
+.works_page ul li:last-child{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.works_page ul li:nth-child(3n){
+    margin-right: 0;
+}
+.works_page ul li a img{
+    width: 28.571vw;
+    height: 15vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+    margin-bottom: 2.143vw;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+.works_page ul li .textarea{
+    font-size: 1.143vw;
+    color: #282F35;
+    letter-spacing: .14em;
+}
+.works_page ul li .textarea p{
+    margin-bottom: .429vw;
+}
+.works_page ul li .textarea p:last-child{
+    margin-bottom: 0;
+}
+/*-------------------------------------------
+contactページ
+-------------------------------------------*/
+.contactform{
+    width: 100vw;
+}
+.contactform .information{
+    font-size: 1.143vw;
+    margin-top: 12.929vw;
+    text-align: center;
+}
+.contactform form{
+    width: 51.571vw;
+    margin: 9.286vw auto 7.143vw;
+}
+.contactform form p{
+    font-size: 1.786vw;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: #282F35;
+    margin-bottom: 1.429vw;
+}
+.contactform form input{
+    width: 51.571vw;
+    height: 5vw;
+    margin-bottom: 3.571vw;
+}
+.contactform textarea{
+    width: 51.571vw;
+    height: 28.571vw;
+    resize: none;
+}
+.contactform form .sendBtn{
+    margin-top: 7.143vw;
+    text-align: center;
+}
+.contactform form .sendBtn input{
+    width: 16.785vw;
+    height: 4.214vw;
+	line-height: 4vw;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.786vw;
+    color: #FFFDFD;
+    background-color: #BC7E8C;
+    border-radius: 2.143vw;
+    border: none;
+    margin-bottom: 0;
+}
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 639px){
+/*-------------------------------------------
+topページ
+-------------------------------------------*/
+#header{
+    width: 100vw;
+    height: 21.33vw;
+    position: fixed;
+    z-index: 100;
+}
+.scrollbg{
+    background-color: #909090;
+}
+#header button{
+    display: block;
+    position: absolute;
+    width: 10.67vw;
+    height: 10.67vw;
+    top: 5.3vw;
+    right: 9.07vw;
+    background-color: transparent;
+    border: none;
+}
+#header span{
+    display: block;
+    width: 10.67vw;
+    height: 1.33vw;
+    background-color: #FFFDFD;
+    position: absolute;
+    top: calc((100%-4px)/2);
+    z-index: 100;
+    border-radius: 1.3vw;
+}
+#header span:nth-child(1){
+    top: 0;
+}
+#header span:nth-child(2){
+    transform: translateY(-2.67vw);
+}
+#header span.menu--isOpen:nth-child(1){
+    transform: rotate(45deg);
+    background-color: #FFFDFD;
+    margin-top: 2.6vw;
+    top: .2vw;
+}
+#header span.menu--isOpen:nth-child(2){
+    opacity: 0;
+}
+#header span.menu--isOpen:nth-child(3){
+    transform: rotate(-45deg); 
+    background-color: #FFFDFD; 
+    margin-top: -2.5vw;
+}
+#header ul{
+    width: 100vw;
+    height: 138.7vw;
+    background-color: #909090;
+    display: none;
+}
+#header ul li{
+    text-align: center;
+    margin-bottom: 18.7vw;
+}
+#header ul li:first-child{
+    padding-top: 25.33vw;
+}
+#header ul li:last-child{
+    margin-bottom: 0;
+}
+#header ul li a{
+    font-size: 8vw;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+#header ul.is-active{
+    display: block;
+    right: 0;
+}
+
+.fv{
+    width: 100vw;
+    height: 200.53vw;
+    background-image: url(./img/fv_bg_sp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.fv .sitename p:first-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.3vw;
+    color: #FFFDFD;
+    position: absolute;
+    top: 54.133vw;
+    left: 6.133vw;
+}
+.fv .sitename p:last-child{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 13.3vw;
+    color: #FFFDFD;
+    position: absolute;
+    top: 73.33vw;
+    left: 24vw;
+    letter-spacing: .06em;
+}
+
+.about{
+    width: 100vw;
+}
+.about h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10.7vw;
+    font-weight: bold;
+    color: #282F35;
+    margin-left: 9.066vw;
+    padding-top: 16vw;
+}
+.about h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 26.67vw;
+    margin-left: 14.4vw;
+    margin-bottom: 4vw;
+}
+.about img{
+    width: 81.867vw;
+    height: 106.67vw;
+    object-fit: cover;
+    object-position: 60% 50%;
+    margin: 13.33vw 9.067vw 0;
+    text-align: center;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.about .textarea{
+    width: 100vw;
+    color: #282F35;
+}
+.about .textarea p:nth-child(1){
+    font-size: 10.7vw;
+    width: 62.93vw;
+    margin: 13.33vw auto 0;
+    text-align: center;
+}
+.about .textarea p:nth-child(2){
+    font-size: 4.267vw;
+    width: 81.867vw;
+    line-height: 1.875;
+    letter-spacing: .04em;
+    margin: 5.33vw auto 0;
+}
+.about a{
+    display: block;
+	width: 62.67vw;
+    height: 15.73vw;
+	line-height: 15.73vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 4.267vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 8vw;
+    margin: 13.33vw auto 0;
+}
+
+.works{
+    width: 100vw;
+}
+.works h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10.7vw;
+    font-weight: bold;
+    color: #282F35;
+    margin: 20vw 0 0 9.6vw;
+    padding-top: 20vw;
+}
+.works h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #282F35;
+    width: 26.67vw;
+    margin-left: 14.4vw;
+    margin-bottom: 4vw;
+}
+.works ul{
+    width: 100vw;
+    display: flex;
+    margin: 5.785vw 0 0;
+}
+.works ul li{
+    width: 81.867vw;
+    height: 72.53vw;
+    margin-left: 9.6vw;
+    margin-right: 9.6vw;
+    margin-bottom: 26.667vw;
+}
+.works ul li a img{
+    width: 81.867vw;
+    height: 53.333vw;
+    object-fit: contain;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+}
+.works ul li .textarea p{
+    font-size: 3.733vw;
+    color: #282F35;
+}
+.works ul li .textarea p:nth-child(1){
+    margin-top: 6.133vw;
+}
+.works ul li .textarea p:nth-child(2){
+    margin-top: 2.4vw;
+}
+.works a:last-child{
+    display: block;
+	width: 62.67vw;
+    height: 15.73vw;
+	line-height: 15.73vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 4.267vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 8vw;
+    margin: 0 auto;
+}
+.works .slick-dots{
+    overflow: hidden;
+    width: 100vw;
+    top: 72.5vw;
+    bottom: initial;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.works .slick-dots li{
+    width: 2.667vw;
+    height: 2.667vw;
+    margin-top: 10.667vw;
+    margin-left: 0;
+    margin-right: 2.667vw;
+}
+.works .slick-dots li:last-child{
+    margin-right: 0;
+}
+.works .slick-dots li button::before{
+    font-size: 2.667vw;
+    color: #909090;
+}
+.works .slick-dots .slick-active button::before{
+    color: #BC7E8C;
+}
+
+.contact_img_sp{
+    margin-top: 48vw;
+}
+
+.contact{
+    width: 100vw;
+    height: 86.133vw;
+    background-color: #909090;
+    margin-bottom: 26.933vw;
+    margin-top: -.27vw;
+}
+.contact h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10.7vw;
+    font-weight: bold;
+    color:   #FFFDFD;
+    margin-left: 9.066vw;
+    padding-top: 13.33vw;
+}
+.contact h2::after{
+    content: "";
+    display: inline-block;
+    border-top: 2px solid #FFFDFD;
+    width: 26.67vw;
+    margin-left: 2.933vw;
+    margin-bottom: 4vw;
+}
+.contact p{
+    font-size: 4vw;
+    color: #FFFDFD;
+    text-align: center;
+    margin-top: 13.33vw;
+}
+.contact a{
+    display: block;
+	width: 62.67vw;
+    height: 15.73vw;
+	line-height: 15.73vw;
+	text-align: center;
+	color: #FFFDFD;
+	font-size: 4.267vw;
+	text-decoration: none;
+	background-color: #BC7E8C;
+	border-radius: 8vw;
+    margin: 8vw auto 0;
+}
+
+footer{
+    margin-bottom: 10.667vw;
+    text-align: center;
+    font-size: 3.733vw;
+    font-weight: 300;
+    color: #282F35;
+}
+
+
+
+/*-------------------------------------------
+aboutページ
+-------------------------------------------*/
+#header_single {
+    width: 100vw;
+    height: 21.33vw;
+    background-color: #909090;
+    position: fixed;
+}
+#header_single button{
+    display: block;
+    position: absolute;
+    width: 10.67vw;
+    height: 10.67vw;
+    top: 7vw;
+    right: 9.07vw;
+    background-color: transparent;
+    border: none;
+}
+#header_single span{
+    display: block;
+    width: 10.67vw;
+    height: 1.33vw;
+    background-color: #FFFDFD;
+    position: absolute;
+    top: calc((100%-4px)/2);
+    border-radius: 1.3vw;
+}
+#header_single span:nth-child(1){
+    top: 0;
+}
+#header_single span:nth-child(2){
+    transform: translateY(-2.67vw);
+}
+#header_single span.menu--isOpen:nth-child(1){
+    transform: rotate(45deg);
+    background-color: #FFFDFD;
+    margin-top: 2.6vw;
+    top: .2vw;
+}
+#header_single span.menu--isOpen:nth-child(2){
+    opacity: 0;
+}
+#header_single span.menu--isOpen:nth-child(3){
+    transform: rotate(-45deg); 
+    background-color: #FFFDFD; 
+    margin-top: -2.5vw;
+}
+#header_single ul{
+    width: 100vw;
+    height: 138.7vw;
+    background-color: #909090;
+    display: none;
+}
+#header_single ul li{
+    text-align: center;
+    margin-bottom: 18.7vw;
+}
+#header_single ul li:first-child{
+    padding-top: 25.33vw;
+}
+#header_single ul li:last-child{
+    margin-bottom: 0;
+}
+#header_single ul li a{
+    font-size: 8vw;
+    color: #FFFDFD;
+    text-decoration: none;
+}
+#header_single ul.is-active{
+    display: block;
+    right: 0;
+}
+
+.about_page{
+    width: 100vw;
+}
+.about_page .profilewrapper{
+    padding-top: 34.667vw;
+    text-align: center;
+}
+.about_page h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8vw;
+    color: #282F35;
+}
+.about_page .profilewrapper img{
+    width: 81.867vw;
+    height: 82.667vw;
+    margin-top: 9.333vw;
+    object-fit: cover;
+}
+.about_page .profilewrapper p{
+    text-align: left;
+    color: #282F35;
+    width: 81.867vw;
+    font-size: 4.267vw;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    margin: 9.333vw auto 0;
+}
+.about_page .skillwrapper{
+    margin-top: 22.667vw;
+    text-align: center;
+}
+.about_page .skillwrapper ul{
+    width: 100vw;
+    display: flex;
+    margin: 9.333vw 0 38.667vw;
+}
+.about_page .skillwrapper ul li{
+    width: 81.867vw;;
+    margin: 0 9.667vw;
+}
+.about_page .skillwrapper ul li .skill_icon{
+    width: 48vw;
+    height: 48vw;
+    background-color: #BC7E8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.about_page .skillwrapper ul li .skill_icon p{
+    font-size: 10.667vw;
+    color: #FFFDFD;
+    font-weight: bold;
+}
+.about_page .skillwrapper ul li .text{
+    width: 81.867vw;
+    color: #282F35;
+    font-size: 4.267vw;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-align: left;
+    margin-top: 8vw;
+}
+.about_page .skillwrapper .slick-dots{
+    overflow: hidden;
+    width: 100vw;
+    height: 5.333vw;
+    top: 85.333vw;
+    bottom: initial;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.about_page .skillwrapper .slick-dots li{
+    width: 2.667vw;
+    height: 2.667vw;
+    margin-left: 0;
+    margin-right: 2.667vw;
+}
+.about_page .skillwrapper .slick-dots li:last-child{
+    margin-right: 0;
+}
+.about_page .skillwrapper .slick-dots li button::before{
+    font-size: 2.667vw;
+    color: #909090;
+}
+.about_page .skillwrapper .slick-dots .slick-active button::before{
+    color: #BC7E8C;
+}
+footer{
+    margin-bottom: 10.667vw;
+    text-align: center;
+    font-size: 3.733vw;
+    color: #282F35;
+}
+/*-------------------------------------------
+worksページ
+-------------------------------------------*/
+.works_page{
+    width: 100vw;
+    margin-bottom: 22.667vw;
+}
+.works_page ul{
+    width: 81.867vw;
+    margin: 0 auto 17.333vw;
+    padding-top: 34.667vw;
+}
+.works_page ul li{
+    margin-bottom: 21.333vw;
+}
+.works_page ul li:last-child{
+    margin-bottom: 0;
+}
+.works_page ul li a img{
+    width: 81.867vw;
+    height: 53.333vw;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
+    margin-bottom: 5.333vw;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+.works_page ul li .textarea{
+    font-size: 4.267vw;
+    color: #282F35;
+    letter-spacing: .14em;
+}
+.works_page ul li .textarea p{
+    margin-bottom: 2.667vw;
+}
+.works_page ul li .textarea p:last-child{
+    margin-bottom: 0;
+}
+.works_page .pageBtn{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.works_page .pageBtn li{
+    width: 10.667vw;
+    height: 10.667vw;
+    background-color: #BC7E8C;
+    border-radius: 50%;
+    margin-right: 8vw;
+    margin-bottom: 0;
+    text-align: center;
+}
+.works_page .pageBtn li:last-child{
+    margin-right: 0;
+}
+.works_page .pageBtn li a{
+    color: #FFFDFD;
+    font-weight: bold;
+    line-height: 10.667vw;
+    text-decoration: none;
+}
+/*-------------------------------------------
+contactページ
+-------------------------------------------*/
+.contactform{
+    width: 100vw;
+}
+.contactform .information{
+    width: 81.867vw;
+    font-size: 4.267vw;
+    padding-top: 34.667vw;
+    line-height: 1.875;
+    letter-spacing: .14em;
+    margin: 0 auto;
+}
+.contactform form{
+    width: 81.867vw;
+    margin: 8vw auto 24vw;
+}
+.contactform form p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5.333vw;
+    font-weight: bold;
+    color: #282F35;
+    margin-bottom: 2.667vw;
+}
+.contactform form input{
+    width: 79.7vw;
+    height: 13.333vw;
+    margin-bottom: 10.667vw;
+    border-radius: 1.333vw;
+    border: 1px solid #282F35;
+}
+.contactform textarea{
+    width: 79.7vw;
+    height: 53.333vw;
+    resize: none;
+    border-radius: 1.333vw;
+}
+.contactform form .sendBtn{
+    margin-top: 24vw;
+    text-align: center;
+}
+.contactform form .sendBtn input{
+    width: 62.67vw;
+    height: 15.73vw;
+	line-height: 15.73vw;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4.267vw;
+    color: #FFFDFD;
+    background-color: #BC7E8C;
+    border-radius: 8vw;
+    border: none;
+    margin-bottom: 0;
+}
+}
