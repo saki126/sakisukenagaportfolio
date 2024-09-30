@@ -467,6 +467,8 @@ topページ
     padding: 2vw 0;
 }
 #header ul li{
+    display: flex;
+    justify-content: center;
     margin-right: 2.5vw;
 }
 #header ul li:last-child{
@@ -695,6 +697,8 @@ aboutページ
 }
 #header_single ul li{
     margin-right: 2.5vw;
+    display: flex;
+    justify-content: center;
 }
 #header_single ul li:last-child{
     margin-right: 0;
@@ -789,6 +793,7 @@ worksページ
     width: 90vw;
     margin: 12.857vw auto 14.286vw;
     display: flex;
+    flex-wrap: wrap;
 }
 .works_page ul li{
     width: 28.571vw;
